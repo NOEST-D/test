@@ -1,0 +1,234 @@
+html {
+	overflow-y: scroll;
+	cursor: url("/assets/cur.cur"), auto;
+	text-size-adjust: none;
+}
+
+@font-face {
+	font-family: "CustomCourier";
+	src: url("/assets/courier.otf") format("opentype");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("/assets/img/stars.gif");
+	background-color: #0f0f0f;
+	color: #000000;
+	overflow-wrap: anywhere;
+	font-family: "CustomCourier", monospace;
+	line-height: 1.2;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	margin: 50px auto;
+	border: 5px inset #cfcfcf;
+	width: 650px;
+	border-collapse: collapse;
+}
+
+.top {
+	background-color: #000000;
+	padding: 10px;
+	color: #ffffff;
+}
+
+.sidebar {
+	width: 165px;
+	background-color: #afafaf;
+	padding: 0 12px;
+	vertical-align: top;
+}
+
+.content {
+	padding: 0 12px;
+	background-color: #cfcfcf;
+	vertical-align: top;
+}
+
+.footer {
+	padding: 0;
+	background-color: #afafaf;
+}
+
+.footer-text {
+	font-size: 14px;
+	margin: 12px 20px;
+}
+
+.egypt {
+	text-align: center;
+	margin: 50px auto;
+	width: 650px;
+}
+
+p {
+	margin: 12px 0;
+}
+
+ul {
+	list-style-type: disc;
+	margin: 20px 0;
+	padding-left: 25px;
+}
+
+hr {
+	border: 1px dashed #000000;
+	width: 90%;
+	margin: 10px auto;
+}
+
+li {
+	margin: 20px 0;
+}
+
+h1 {
+	color: #ff0000;
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+h2 {
+	text-align: center;
+	font-size: 23px;
+	margin: 5px 0;
+}
+
+a {
+	color: #0000ee;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	cursor: url("/assets/curli.cur"), auto;
+}
+
+.blink {
+	color: #ff0000;
+	font-weight: bold;
+	animation: blink 1s step-start infinite;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.ticker {
+	background: #1b2452;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 18px;
+	font-weight: bold;
+	color: #d4af37;
+}
+
+.ticker span {
+	display: inline-block;
+	padding-left: 100%;
+	animation: ticker-scroll 12s linear infinite;
+}
+
+.logo {
+	display: block;
+	margin: 0;
+	width: 100%;
+}
+
+.gif {
+	width: 25%;
+	margin: 10px;
+}
+
+.long-gif {
+	width: 90%;
+	margin: 10px;
+}
+
+.egypt-gif {
+	width: 70%;
+}
+
+.constr-gif {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.photo {
+	display: block;
+	width: 95%;
+	margin: 20px auto;
+}
+
+.code {
+	font-size: 14px;
+	margin: 10px 20px;
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+@keyframes ticker-scroll {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+html::-webkit-scrollbar {
+	width: 16px;
+	height: 16px;
+}
+
+html::-webkit-scrollbar-track {
+	background: url("/assets/img/scroll/background.png");
+	image-rendering: pixelated;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: #c0c0c0;
+	box-shadow:
+		inset -1px -1px #000000,
+		inset 1px 1px #dfdfdf,
+		inset -2px -2px #808080,
+		inset 2px 2px #ffffff;
+}
+
+html::-webkit-scrollbar-button:vertical:decrement {
+	height: 16px;
+	width: 16px;
+	background-image: url("/assets/img/scroll/up.png");
+	image-rendering: pixelated;
+}
+
+html::-webkit-scrollbar-button:vertical:increment {
+	height: 16px;
+	width: 16px;
+	background-image: url("/assets/img/scroll/down.png");
+	image-rendering: pixelated;
+}
+
+html::-webkit-scrollbar-button:horizontal:decrement {
+	height: 16px;
+	width: 16px;
+	background-image: url("/assets/img/scroll/left.png");
+	image-rendering: pixelated;
+}
+
+html::-webkit-scrollbar-button:horizontal:increment {
+	height: 16px;
+	width: 16px;
+	background-image: url("/assets/img/scroll/right.png");
+	image-rendering: pixelated;
+}
